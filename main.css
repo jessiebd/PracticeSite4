@@ -1,0 +1,13 @@
+h1:first-of-type {
+    width: 100%;
+    height: 25px;
+    position: fixed;
+}
+footer:first-of-type {
+    width: 100%;
+    height: 15px;
+    position: fixed;
+}
+#wrapper {
+    margin: 25px 15px;
+}
