@@ -1,13 +1,202 @@
-h1:first-of-type {
-    width: 100%;
-    height: 25px;
-    position: fixed;
-}
-footer:first-of-type {
-    width: 100%;
-    height: 15px;
-    position: fixed;
-}
+/* Global Changes */
+
+h1 {
+	padding: .2em .5em 1em;
+	}
+
+h2 {
+	padding: .2em;
+	text-align: center;
+	}
+
+.banner {
+	display: block;
+	margin: auto;
+	width: 80%;
+	}
+
+header.title {
+	position: fixed;
+	top: 0;
+	height: 75px;
+	width: 100%;
+	background: white;
+	float: none;
+	}
+	
+footer {
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background: white;
+	}
+
 #wrapper {
-    margin: 25px 15px;
+	margin: 80px 0 105px 0;
+	}
+
+article {
+	float: none;
+	}
+
+article p:last-of-type {
+	padding: 0 0 2em;
+	}
+
+
+
+/* Changes to Page One/Fixed Position Layout */
+
+aside.pg1 {
+	position: fixed;
+	left: 0;
+	width: 160px;
+	padding: 0 .4em;
+	}
+
+div.articles1 {
+	position: fixed;
+	left: 160px;
+	height: 400px;
+	width: 750px;
+	padding: 0 .2em;
+	overflow: scroll;
+	}
+
+img.pic {
+	width: 300px;
+	}
+
+/* Changes to Page Two/Floating Position Layout */
+
+aside.two {
+	float: left;
+	min-width: 130px;
+	}
+
+div.articles2 {
+	min-height: 400px;
+	min-width: 350px;
+	padding: 0 30px;
+	overflow: scroll;
+	}
+	
+.left2 {
+	float: left;
+	margin: 10px 35px 10px 0px;
+	width: 170px;
+    height: 113px;
+	}
+
+.right2 {
+	float: right;
+	margin: 10px 0px 10px 35px;
+	width: 170px;
+    height: 113px;
+	}
+footer.footer2{
+    float: clear;
+}
+.banner2 {
+    height: 166px;
+    width: 471px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* Changes to Page Three/Relative Position Layout */
+
+aside.three {
+	float: left;
+	min-width: 130px;
+	}
+
+div.articles3 {
+	min-height: 400px;
+	min-width: 350px;
+	padding: 0 1em;
+	overflow: scroll;
+	}
+
+.right3 {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}
+
+.left3 {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
+
+
+/* Changes to Page Four/Inline-Block Layout */
+
+aside.four {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	min-width: 130px;
+	}
+
+div.articles4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+	min-height: 400px;
+	min-width: 350px;
+	}
+
+.right4 {
+	float: right;
+	margin: 1em 0em 1em 2em;
+	width: 25%;
+	}
+
+.left4 {
+	float: left;
+	margin: 1em 2em 1em 0;
+	width: 25%;
+	}
+/* Changes to Page 5/Inline-Block Image Gallery */
+#wrapper {
+	margin: 80px 0 105px 0;
+	}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+}
+.gallery {
+    display: flex; /* Use flexbox for inline layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    gap: 10px; /* Space between images */
+}
+.imgfive {
+    max-width: 100%; /* Ensures images fit within their container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow effect */
+
+}
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive layout: 3 images per row with gap included */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    object-fit:contain;
+    object-position: 50% 50%;
+}
+.bannerfive {
+    display: block;
+	margin: auto;
+	width: 80%;
+}
+aside.five {
+    float: left;
+	min-width: 130px;
 }
