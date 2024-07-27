@@ -174,21 +174,22 @@ div.articles4 {
     margin: 1em;
 }
 .gallery {
-    display: flex; /* Use flexbox for inline layout */
-    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
-    gap: 10px; /* Space between images */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
 }
 .imgfive {
-    max-width: 100%; /* Ensures images fit within their container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional: adds rounded corners to images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow effect */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
+    display: block; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
 }
 .gallery-item {
-    flex: 1 1 calc(33.333% - 20px); /* Responsive layout: 3 images per row with gap included */
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-    object-fit:contain;
+    object-fit: scale-down;
     object-position: 50% 50%;
 }
 .bannerfive {
