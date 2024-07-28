@@ -170,6 +170,7 @@ div.articles4 {
 .five {
 	object-position: center;
 }
+
 .box {
     display: inline-block;
     width: 450px;
@@ -177,6 +178,7 @@ div.articles4 {
     margin: 5em;
 	padding: 5px;
 	border:cornflowerblue;
+	
 }
 .gallery {
     display: flex;
