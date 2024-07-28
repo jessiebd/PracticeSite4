@@ -163,15 +163,20 @@ div.articles4 {
 	width: 25%;
 	}
 /* Changes to Page 5/Inline-Block Image Gallery */
+
 #wrapper {
 	margin: 80px 0 105px 0;
 	}
-
+.five {
+	object-position: center;
+}
 .box {
     display: inline-block;
-    width: 200px;
-    height: 100px;
-    margin: 1em;
+    width: 450px;
+    height: 450px;
+    margin: 5em;
+	padding: 5px;
+	border:cornflowerblue;
 }
 .gallery {
     display: flex;
@@ -191,13 +196,47 @@ div.articles4 {
 .gallery-item {
     object-fit: scale-down;
     object-position: 50% 50%;
+	display: inline-block;
 }
 .bannerfive {
     display: block;
 	margin: auto;
 	width: 80%;
+	object-position: center;
 }
 aside.five {
     float: left;
 	min-width: 130px;
+}
+.container {
+	position: relative;
+	width: 50%;
+
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.container:hover .overlay {
+	width: 100%;
+	left: 0;
+}
+.text {
+	white-space: nowrap; 
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
