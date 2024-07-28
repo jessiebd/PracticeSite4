@@ -170,6 +170,11 @@ div.articles4 {
 .five {
 	object-position: center;
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
 .box {
     display: inline-block
     width 450px;
@@ -178,10 +183,10 @@ div.articles4 {
 	padding: 5px;
 	border:cornflowerblue;
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
+.container {
+	position: relative;
+	width: 50%;
+	
 }
 .imgfive {
     width: 100%;
@@ -208,11 +213,7 @@ aside.five {
     float: left;
 	min-width: 130px;
 }
-.container {
-	position: relative;
-	width: 50%;
 
-}
 .overlay {
 	position: absolute;
 	bottom: 0;
